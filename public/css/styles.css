@@ -1,0 +1,98 @@
+
+     header{
+        background-color:#EAC926; 
+      }
+ 
+ body{
+     font-family: roboto ;
+     font-size: 12px;
+    
+     background-size: cover ;
+     padding: 10px;
+ }
+ .burger-menu{
+     color: white;
+     background-color:#03264C;
+     padding: 5px;
+     margin-left: 45%;
+     margin-right: 45%;
+ border-radius: 5px;
+ text-align: center;
+ }
+ .titulares{
+ font-size: 24px;
+ }
+ .precio{
+     font-size: 18px;
+ }
+ .oferta{
+     font-size: 16px;
+     color:#39b54a ;
+ }
+ a{
+     text-decoration: none;
+     color: black;
+ }
+ .descripcion{
+ font-size: 16px;
+ 
+ }
+ article{
+     background-color:#ebebeb;;;
+ }
+ div{
+ color: #1259c3;
+     text-align: center;
+ 
+ }
+ .logo {
+  color: #39b54a;
+ line-height: 10px;
+ font-size: 2em;
+ }
+ article{
+     text-align: center;
+ }
+ main{
+   background-size: cover;
+   padding: 12px ;
+   background-color: #ebebeb; 
+ }
+ 
+ css/ * {
+     box-sizing: border-box;
+   }
+   
+   /* Style the search field */
+   form.busqueda input[type=text] {
+     padding: 10px;
+     font-size: 12px;
+     border: 1px solid #666;
+     float: left;
+     width: 50%;
+     background: white;
+   }
+   
+   /* Style the submit button */
+   form.busqueda button {
+     float: left;
+     width: 10%;
+     padding: 10px;
+     background: white;
+     color: #03264C;
+     font-size: 12px;
+     border: 1px solid grey;
+     border-left: none; /* Prevent double borders */
+     cursor: pointer;
+   }
+   
+   form.busqueda button:hover {
+     background: #0b7dda;
+   }
+   
+   /* Clear floats */
+   form.busqueda::after {
+     content: "";
+     clear: both;
+     display: table;
+   }
