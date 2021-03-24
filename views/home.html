@@ -1,48 +1,53 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href='/css/styles.css' />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
-       
-        <title>Mercado Liebre</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href='/css/styles.css' />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+    <title>Mercado Liebre</title>
+</head>
 
 <body>
-    <header>
-        <img src="/images/logo-mercado-liebre.svg" width="360" alt="Logo de MercadoLiebre">
-        <p><form class="busqueda" action="action_page.php">
+    <header >
+       <aside class="top">  <img src="/images/logo-mercado-liebre.svg" width=50% alt="Logo de MercadoLiebre">
+        <p>
+        <form class="busqueda" action="action_page.php">
             <input type="text" placeholder="Buscar productos,marcas.." name="search">
             <button type="submit"><i class="fa fa-search"></i></button>
-          </form></p>
-        <p>                                                                                                                                  
-            <i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito
+        </form>
         </p>
-        <nav>
-           
-            <ul type = "none">
-                <li ><a href="#">Ofertas</a></li>
+        <p class="compra">
+            <i class="fas fa-hand-holding-usd"></i> en cuotas y sin tarjeta de crédito
+        </p></aside>
+        <div class="burger-menu" class="menu" align="center"><i class="fa fa-bars burger" id="iconMenu"
+                    style="font-size: 2em;"></i></div>
+        
+        <nav class="menu">
+
+            <ul type="none">
+                <li><a href="#">Ofertas</a></li>
                 <li><a href="#">Tiendas Oficiales</a></li>
                 <li><a href="#">Vender</a></li>
                 <li><a href="#">Ayuda</a></li>
             </ul>
-            <ul type = "none">
-                <li><a href="/register">Creá tu cuenta
-                       <i class="far fa-id-card"></i>
+            <ul type="none">
+                <li  class="entrar"><a href="/register">Creá tu cuenta
+                        <i class="far fa-id-card"></i>
                     </a></li>
-                <li><a href="/login">Ingresá
-                    <i class="fas fa-sign-in-alt"></i>
+                <li class="entrar"><a href="/login">Ingresá
+                        <i class="fas fa-sign-in-alt"></i>
                     </a></li>
                 <li><a href="#">Mis compras
-                    <i class="fas fa-shopping-basket"></i>
+                        <i class="fas fa-shopping-basket"></i>
                     </a></li>
             </ul>
-            <div class = "burger-menu" class="menu" align = "center"><i class = "fa fa-bars burger" id="iconMenu" style="font-size: 2em;"></i>
+            
         </nav>
     </header>
     <section>
@@ -52,78 +57,93 @@
         <section>
 
             <h3 class="titulares">Basado en tu última visita</h3>
-            <article>
+            <div class="productos">
+            <article class="articulo">
                 <img src="/images/img-cafetera-moulinex.jpg" width="360" alt="Cafetera" class="product_img">
-                <p class="logo"> <i class="fas fa-truck"></i></p>
-                <p class="precio">$6.770</p>
+              
+               <div class="mis-productos">  <p class="logo"><i class="fas fa-truck"></i></p>
+             <div class="precio-con-oferta"> <p class="precio">$6.770</p>
                 <p class="oferta">40% off</p>
-                <h4 class= "descripcion">Cafetera Moulinex</h4>
+               </div>
+                <h4 class="descripcion">Cafetera Moulinex</h4>
+               </div>
             </article>
 
-            <article>
+            <article class="articulo">
                 <img src="/images/img-macbook-pro-2019.jpg" width="360" alt="MacBook" class="product_img">
-                <p class="logo"> <i class="fas fa-truck"></i></p>
+                <div class="mis-productos">   <p class="logo"> <i class="fas fa-truck"></i></p>
                 <p class="precio">$230.000</p>
                 <p class="oferta">20% off</p>
-                <h4 class= "descripcion">MacBook Pro 2019</h4>
+                <h4 class="descripcion">MacBook Pro 2019</h4>
+                </div>
             </article>
 
-            <article>
+            <article class="articulo">
                 <img src="/images/img-samsung-galaxy-s10.jpg" width="360" alt="Teléfono Móvil Samsung Galaxy"
                     class="product_img">
-                    <p class="logo"> <i class="fas fa-truck"></i></p>
-                    
+                    <div class="mis-productos">  <p class="logo"> <i class="fas fa-truck"></i></p>
+
                 <p class="precio">$70.500</p>
                 <p class="oferta">10% off</p>
-                <h4 class= "descripcion">Teléfono móvil Samsung Galaxy S10</h4>
+                <h4 class="descripcion">Teléfono móvil Samsung Galaxy S10</h4>
+                    </div>
             </article>
-            <article>
+            <article class="articulo">
                 <img src="/images/img-tv-samsung-smart.jpg" width="360" alt="SmartTv Samsung" class="product_img">
-                <p class="logo"><i class="fas fa-truck"></i></p>
+                <div class="mis-productos">
+                     <p class="logo"><i class="fas fa-truck"></i></p>
                 <p class="precio">$23.200</p>
                 <p class="oferta">5% off</p>
 
-                <h4 class= "descripcion">SmartTv Samsung 43"</h4>
+                <h4 class="descripcion">SmartTv Samsung 43"</h4>
+                </div>
             </article>
+           </div> 
         </section>
 
         <section>
             <h3 class="titulares">Ofertas</h3>
-            <article>
+            <div class="productos">
+            <article class="articulo">
                 <img src="/images/img-cafetera-moulinex.jpg" width="360" alt="Cafetera" class="product_img">
-                <p class="logo"> <i class="fas fa-truck"></i></p>
-               <p class="precio">$6.770</p>
-               <p class="oferta">40% off</p>
-               <h4 class= "descripcion">Cafetera Moulinex</h4>
+                <div class="mis-productos"> <p class="logo"> <i class="fas fa-truck"></i></p>
+                <p class="precio">$6.770</p>
+                <p class="oferta">40% off</p>
+                <h4 class="descripcion">Cafetera Moulinex</h4>
+                </div> 
             </article>
-            <article>
+            <article class="articulo">
                 <img src="/images/img-macbook-pro-2019.jpg" width="360" alt="MacBook" class="product_img">
-                <p class="logo"><i class="fas fa-truck"></i></p>
+                <div class="mis-productos"> <p class="logo"><i class="fas fa-truck"></i></p>
                 <p class="precio">$230.000</p>
                 <p class="oferta">20% off</p>
-                <h4 class= "descripcion">MacBook Pro 2019</h4>
+                <h4 class="descripcion">MacBook Pro 2019</h4>
+                </div>
             </article>
-            <article>
+            <article class="articulo">
                 <img src="/images/img-samsung-galaxy-s10.jpg" width="360" alt="Teléfono Móvil Samsung Galaxy"
                     class="product_img">
-                    <p class="logo"><i class="fas fa-truck"></i></p>
-                    <p class="precio">$70.500</p>
-                    <p class="oferta">10% off</p>
-                    <h4 class= "descripcion">Teléfono móvil Samsung Galaxy S10</h4>
+                    <div class="mis-productos">   <p class="logo"><i class="fas fa-truck"></i></p>
+                <p class="precio">$70.500</p>
+                <p class="oferta">10% off</p>
+                <h4 class="descripcion">Teléfono móvil Samsung Galaxy S10</h4>
+                    </div> 
             </article>
-            <article>
+            <article class="articulo">
                 <img src="/images/img-tv-samsung-smart.jpg" width="360" alt="SmartTv Samsung" class="product_img">
-                <p class="logo">  <i class="fas fa-truck"></i></p>
+                <div class="mis-productos"> <p class="logo"> <i class="fas fa-truck"></i></p>
                 <p class="precio">$23.200</p>
                 <p class="oferta">5% off</p>
-                <h4 class= "descripcion">SmartTv Samsung 43"</h4>
+                <h4 class="descripcion">SmartTv Samsung 43"</h4>
+                </div> 
             </article>
+            </div>
         </section>
     </main>
     <footer>
-        <section >
+        <section>
             <article>
-                <div>
+                <div class="parteDelFooter">
 
                     <i class="fas fa-credit-card" style="font-size: 2rem;"></i>
 
@@ -134,9 +154,9 @@
                     seguro!</p>
             </article>
         </section>
-        <section >
+        <section>
             <article>
-                <div>
+                <div class="parteDelFooter">
 
                     <i class="fas fa-gift" style="font-size: 2rem;"></i>
 
@@ -146,9 +166,9 @@
                     productos. Es un beneficio de Mercado Puntos.</p>
             </article>
         </section>
-        <section >
+        <section>
             <article>
-                <div>
+                <div class="parteDelFooter">
 
                     <i class="fas fa-user-shield" style="font-size: 2rem;"></i>
 

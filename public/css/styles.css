@@ -2,9 +2,14 @@
      header{
         background-color:#EAC926; 
       }
+    
+      
+      .entrar{
+        display: none;
+      }
  
  body{
-     font-family: roboto ;
+     font-family: Roboto ;
      font-size: 12px;
     
      background-size: cover ;
@@ -18,46 +23,110 @@
      margin-right: 45%;
  border-radius: 5px;
  text-align: center;
+ display: block;
  }
  .titulares{
  font-size: 24px;
  }
  .precio{
      font-size: 18px;
+     flex: 2 1 30%;
+     align-items: center;
  }
  .oferta{
-     font-size: 16px;
+     font-size:  16px;
      color:#39b54a ;
+     flex: 2 1 70%;
+    align-items: flex-start;
+ }
+ div.mis-productos{
+   
+   width: 100%;
+    display: flex;
+    
+    align-items: center;
+    border-top: 1px solid #ebebeb;
+    position: relative;
+    padding: 15px;
+   
+ 
+}
+div.precio-con-oferta{
+  
+  display: flex;
+  flex-flow: row;
+  width: 100%;
+
+}
+div.productos{
+  
+  display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  
+}
+ 
+ .menu{
+   display: flex;
+   display: none;
+   
+   
  }
  a{
      text-decoration: none;
      color: black;
+    
  }
  .descripcion{
  font-size: 16px;
- 
+ display:none;
+ text-align: center;
  }
- article{
-     background-color:#ebebeb;;;
+ .articulo{
+     background-color:#ebebeb;
+     margin-bottom: 10px;
  }
- div{
+ div.parteDelFooter{
  color: #1259c3;
      text-align: center;
  
  }
- .logo {
+
+ 
+ 
+  
+
+main section article i{
+  display: block;
   color: #39b54a;
  line-height: 10px;
  font-size: 2em;
+ width: 40px;
+ height: 40px; 
+ padding: 5px;
+ border-radius: 50%;
+ border: solid 1px #39b54a;
+ right: 20px;
+  top: -15px;
+   position: absolute;
+   box-sizing: border-box;
+   flex-wrap: wrap;
  }
- article{
-     text-align: center;
- }
+ 
+ 
+ 
  main{
    background-size: cover;
    padding: 12px ;
    background-color: #ebebeb; 
+   text-align: center;
+   width: 90%;
+   
  }
+ 
+ 
  
  css/ * {
      box-sizing: border-box;
@@ -96,3 +165,99 @@
      clear: both;
      display: table;
    }
+   @media (min-width: 361px) { 
+     .top{
+       display: flex;
+       justify-content: space-between;
+     }
+     .compra{
+        max-width: 330px;
+        text-align: right;
+font-size: 12px;
+    }
+     body{  
+       box-shadow: 0px 0px 10px rgb( 100, 100, 100);
+      
+    }
+    .menu{
+      display:block;
+      display: flex;
+      justify-content: space-between;
+   
+    }
+    .menu ul{
+      display: flex;
+      
+    }
+    .menu li{
+margin: 0 5px;
+
+    }
+    .descripcion{
+      display: block;
+    }
+    .entrar{
+      display: block;
+    }
+    .burger-menu{
+      display: none;
+    }
+    div.mis-productos{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-between;
+      flex: 2 1 auto;
+      flex-flow:row ;
+  }
+    
+    
+
+   }
+   @media (min-width: 769px){
+     body{
+      box-shadow: 0px 0px 10px rgb( 100, 100, 100);
+     
+     }
+      .descripcion{
+        display: block;
+      }
+      .entrar{
+        display: block;
+      }
+      .burger-menu{
+        display: none;
+      }
+  .menu,.compra{
+    max-width: 769px ;
+    margin: auto;
+  } 
+   .menu li{
+    margin: 0 10px;
+        }
+        .top{
+          align-items: center;
+
+        }
+        .menu a{
+         font-size: 16px;
+              }
+              .compra{
+                max-width: none;
+               margin: 0;
+                font-weight: 400;
+              ;
+                font-size:  15px;
+
+              }
+              div.mis-productos{
+                flex: 4 1 auto;
+      flex-flow:row ;
+
+              }
+              
+
+   }
+   
+   
