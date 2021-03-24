@@ -1,6 +1,19 @@
 
-     header{
+     *{
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+     }
+      header{
         background-color:#EAC926; 
+      }
+      footer{
+        background-color: white;
+        margin-top: 20px;
+        padding: 15px;
+      }
+      h5{
+        text-align: left;
       }
     
       
@@ -11,6 +24,7 @@
  body{
      font-family: Roboto ;
      font-size: 12px;
+     background-color: #ebebeb;
     
      background-size: cover ;
      padding: 10px;
@@ -43,7 +57,7 @@
    
    width: 100%;
     display: flex;
-    
+    background-color: white;
     align-items: center;
     border-top: 1px solid #ebebeb;
     position: relative;
@@ -83,9 +97,11 @@ div.productos{
  font-size: 16px;
  display:none;
  text-align: center;
+ background-color: white;
+ color: #666;;
  }
  .articulo{
-     background-color:#ebebeb;
+    background-color: white;
      margin-bottom: 10px;
  }
  div.parteDelFooter{
@@ -120,9 +136,10 @@ main section article i{
  main{
    background-size: cover;
    padding: 12px ;
-   background-color: #ebebeb; 
+   
    text-align: center;
    width: 90%;
+   margin: auto;
    
  }
  
@@ -219,6 +236,11 @@ margin: 0 5px;
      body{
       box-shadow: 0px 0px 10px rgb( 100, 100, 100);
      
+     }
+     footer{
+       display: flex;
+       flex-wrap: wrap;
+       flex-flow: row;
      }
       .descripcion{
         display: block;
