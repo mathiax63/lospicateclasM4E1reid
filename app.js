@@ -1,4 +1,5 @@
-const express = require('express')
+const express = require('express');
+const { dirname } = require('path');
 const app = express()
 const port = 3000
 const path = require('path');
@@ -13,3 +14,10 @@ app.get('/', (req, res) => {
 app.listen(port, () => {
     console.log('esta andando en el puerto '+ port);
 });
+
+app.get("/login", (req, res) => {
+    res.sendFile(path.join(__dirname, "./views/login.html" ))
+} )
+app.get("/register", (req, res) => {
+    res.sendFile(path.join(__dirname, "./views/register.html" ))
+} )

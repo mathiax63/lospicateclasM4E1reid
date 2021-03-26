@@ -103,6 +103,7 @@ div.productos{
  .articulo{
     background-color: white;
      margin-bottom: 10px;
+     
  }
  div.parteDelFooter{
  color: #1259c3;
@@ -136,7 +137,7 @@ main section article i{
  main{
    background-size: cover;
    padding: 12px ;
-   
+   align-items: center;
    text-align: center;
    width: 90%;
    margin: auto;
@@ -182,6 +183,42 @@ main section article i{
      clear: both;
      display: table;
    }
+   /* register*/
+
+.cosas-del-registro{
+  text-align: center;
+  display: flex;
+  padding: 15px;
+  align-items: center;
+  width: 50%;
+  margin:auto;
+}
+.login{
+  padding: 15px;
+  align-items: center;
+  text-align: center;
+  
+
+}
+div.login-datos{
+  margin-bottom: 10px;
+  display: block;
+}
+.datos-de-entrada{
+  width: 50%;
+  padding: 6px 6px;
+}
+.boton-del-login{
+  padding: 5px;
+  border-radius: 5px;
+}
+
+
+
+
+
+
+
    @media (min-width: 361px) { 
      .top{
        display: flex;
