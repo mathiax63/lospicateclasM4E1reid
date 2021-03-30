@@ -13,7 +13,8 @@
         padding: 15px;
       }
       h5{
-        text-align: left;
+        display: block;
+        margin: auto;
       }
     
       
@@ -162,6 +163,7 @@ main section article i{
    
    /* Style the submit button */
    form.busqueda button {
+    
      float: left;
      width: 10%;
      padding: 10px;
@@ -184,15 +186,27 @@ main section article i{
      display: table;
    }
    /* register*/
+   .form-del-register{
+
+    box-sizing: border-box;
+   }
 
 .cosas-del-registro{
   text-align: center;
-  display: flex;
-  padding: 15px;
+
+  padding: 15px 10px;
   align-items: center;
   width: 50%;
   margin:auto;
+  font-size: 13px;
+  
+   
 }
+div.titulo-del-register{
+font-size: 16px;
+font-weight:400 ;
+}
+
 .login{
   padding: 15px;
   align-items: center;
@@ -211,6 +225,12 @@ div.login-datos{
 .boton-del-login{
   padding: 5px;
   border-radius: 5px;
+}
+.enlace-del-login{
+  text-align: center;
+  color: blue;
+  align-items: center;
+  font-size: 16px;
 }
 
 
@@ -280,8 +300,12 @@ margin: 0 5px;
        flex-flow: row;
      }
       .descripcion{
-        display: block;
+        
+         display: block;
+       
+
       }
+      
       .entrar{
         display: block;
       }

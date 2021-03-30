@@ -15,7 +15,7 @@
 
 <body>
     <header >
-       <div class="top">  <img src="/images/logo-mercado-liebre.svg" width=50% alt="Logo de MercadoLiebre">
+       <div class="top">  <img src="/images/logo-mercado-liebre.svg" width=25% alt="Logo de MercadoLiebre">
         <p>
         <form class="busqueda" action="action_page.php">
             <input type="text" placeholder="Buscar productos,marcas.." name="search">
@@ -50,64 +50,86 @@
             
         </nav>
     </header>
+    <main class="maind-del-register">
     
-    
-        <form action="producto" method="POST">
+    <h1>registrese</h1>
+        <form action="producto" method="POST" class="form-del-register">
             <div class="cosas-del-registro">
-            <label for="usuario">nombre y apellido</label>
-            <input type="text" name="" id="usuario"  placeholder="julio herrera" required>
+            <label for="usuario"></label>
+            <input type="text" name="" id="usuario"  placeholder="nombre y apellido" required>
     </div>
     <div class="cosas-del-registro">
-            <label for="su email">email</label>
+            <label for="su email"></label>
 
-            <input type="email" name="" id="su email"  placeholder="mercadoliebre@hotmail.es" required>
+            <input type="email" name="" id="su email"  placeholder="email" required>
 </div>
 <div class="cosas-del-registro">
+    <div class="titulo-del-register">
             <label for="su edad">su fecha de nacimiento</label>
-
-            <input type="data" name="" value="1970/2/29" max=2021/3/25 required>
+</div>
+            <input type="data" name="" value="mm/dd/yyyy"  required>
 </div>
 <div class="cosas-del-registro">
-            <label for="domicilio">su domicilio</label>
+            <label for="domicilio"></label>
 
-            <input type="text" name="" id="domicilio" placeholder="buenos aires" required>
+            <input type="text" name="" id="domicilio" placeholder="domicilio" required>
 </div>
 <div class="cosas-del-registro">
-            <label for="compra Venta">compra o vende</label>
-                <input type="radio" name="compraOVende" id="compra Venta"> Vendeo
-                <input type="radio" name="compraOVende" id="compra Venta">compro
-            
+    <div class="titulo-del-register">
+    <label for="compra venta">compra o vende</label>
+    </div>
+            <label for="compra Venta">
+                <input type="radio" name="compraOVende" id="compra Venta">  vendo
+               
+                
+            </label>
+       
+            <label for="compra Venta">
+                <input type="radio" name="compraOVende" id="compra Venta">  compro
+               
+                
+            </label>
+        
         </div>
         <div class="cosas-del-registro">
-          
+            <div class="titulo-del-register">
             <label for="sus intereses">¿que le interesa?</label>
-                <input type="checkbox" name="sus intereses" value="le gusta la Electro?">Electro
+</div>
+<div class="cosas-del-registro">
+                <input type="checkbox" name="sus intereses" value="le gusta la Electro?">    Electro
+               </div>
+               <div class="cosas-del-registro">
                
-               
-                    <input type="checkbox" name="sus intereses" value="le gusta la moda?">moda
-                    
+                    <input type="checkbox" name="sus intereses" value="le gusta la moda?">    moda
+                    </div>
+                    <div class="cosas-del-registro">
                    
-                        <input type="checkbox" name="sus intereses" value="le gusta el hoga?">hogar
-                     
-                            <input type="checkbox" name="sus intereses" value="le gusta la Juguetería?">Juguetería
-                           
-                                <input type="checkbox" name="sus intereses" value="le gusta la Vida sana?">Vida sana
-                                
+                        <input type="checkbox" name="sus intereses" value="le gusta el hoga?">   hogar
+                     </div>
+                     <div class="cosas-del-registro">
+                            <input type="checkbox" name="sus intereses" value="le gusta la Juguetería?">  Juguetería
+                           </div>
+                           <div class="cosas-del-registro">
+                                <input type="checkbox" name="sus intereses" value="le gusta la Vida sana?">  Vida sana
+                                </div>
                             </div>
                             <div class="cosas-del-registro">
-                                <label for="imagen">su imagen</label>
+                            <div class="titulo-del-register">
+                                <label for="imagen">su imagen</label></div>
+                                <div class="cosas-del-registro">
 
                                 <input type="file" name="" id="imagen">
 </div>
+</div>
 <div class="cosas-del-registro">
-                                <label for="contraseña">elija su contraseña</label>
+                                <label for="contraseña"></label>
 
-                                <input type="password" name="" id="contraseña" placeholder="marcoaurelio" required>
+                                <input type="password" name="" id="contraseña" placeholder="elija su contraseña" required>
                             </div>
                             <div class="cosas-del-registro">
-                                <label for="confirme su contraseña">confirme su contraseña</label>
+                                <label for="confirme su contraseña"></label>
 
-                                <input type="password" name="" id= "confirme su contraseña" placeholder="marcoaurelio" required>
+                                <input type="password" name="" id= "confirme su contraseña" placeholder="confirme su contraseña" required>
 </div>
 <div class="cosas-del-registro">
                                 <label for=""></label>
@@ -115,10 +137,10 @@
 <button type="submit" class="boton-del-login">enviar</button>
 </div>
 
-                                
+     <a href="/login" class="enlace-del-login">¿ya tiene cuenta?</a>                           
         </form>
 
-    
+    </main>
 
 
 

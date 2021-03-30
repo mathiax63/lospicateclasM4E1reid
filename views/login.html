@@ -15,7 +15,7 @@
 
 <body>
     <header >
-       <div class="top">  <img src="/images/logo-mercado-liebre.svg" width=50% alt="Logo de MercadoLiebre">
+       <div class="top">  <img src="/images/logo-mercado-liebre.svg" width=25% alt="Logo de MercadoLiebre">
         <p>
         <form class="busqueda" action="action_page.php">
             <input type="text" placeholder="Buscar productos,marcas.." name="search">
@@ -51,32 +51,35 @@
         </nav>
     </header>             
 
+<main class="main-del-login">
+    <h1>iniciar secion</h1>
 
-
-    <form action="./views/home.html" method="POST" class="login">
+    <form action="/login" method="POST" class="login">
         <div class="login-datos">
-<label for="su nombre">su nombre</label>
+<label for="su nombre"></label>
 
-<input type="text" name="" id="" placeholder="marcos" class="datos-de-entrada"required>
+<input type="text" name="" id="" placeholder="su nombre" class="datos-de-entrada"required>
 </div>
 <div class="login-datos">
-<label for="contraseña">su contraseña</label>
+<label for="contraseña"></label>
 
-<input type="password" name="" id="" placeholder="20302011" class="datos-de-entrada" required>
+<input type="password" name="" id="" placeholder="su contraseña" class="datos-de-entrada" required>
 </div>
 <div class="login-datos">
 <label for="enviar"></label>
 
     
-
+<a href="/register">
 <button type="reset" class="boton-del-login">borrar</button>
+</a>
 <button type="submit" class="boton-del-login">enviar</button>
+
 </div>
 
 
     </form>
-
-
+<a href="/register" class="enlace-del-login">¿no tiene cuenta?</a>
+</main>
 
 
 
