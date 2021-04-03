@@ -7,14 +7,47 @@
       header{
         background-color:#EAC926; 
       }
+      .logo-y-barra{
+        display: flex;
+        flex-flow: row;
+        justify-content: space-around;
+        margin: 3px 5px;
+        width: 100%;
+
+      }
+      .product_img{
+        width: 100%;
+        max-width: 250px;
+    }
+     
+      
+      .compra{
+        align-items: center;
+        text-align: center;
+        margin: 10px;
+      }
+      .barra-de-busqueda{
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        box-sizing: border-box;
+        
+
+      }
+      
       footer{
         background-color: white;
         margin-top: 20px;
         padding: 15px;
       }
-      h5{
-        display: block;
+      
+      
+      .fin-footer{
+        display: flex;
         margin: auto;
+        margin-top: 10px;
       }
     
       
@@ -56,14 +89,13 @@
  }
  div.mis-productos{
    
-   width: 100%;
     display: flex;
     background-color: white;
     align-items: center;
     border-top: 1px solid #ebebeb;
     position: relative;
     padding: 15px;
-   
+   flex: 1 1 auto
  
 }
 div.precio-con-oferta{
@@ -74,7 +106,7 @@ div.precio-con-oferta{
 
 }
 div.productos{
-  
+ 
   display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -95,22 +127,56 @@ div.productos{
     
  }
  .descripcion{
- font-size: 16px;
- display:none;
+ font-size: 0px;
  text-align: center;
  background-color: white;
- color: #666;;
+ color: #666;
+ transition: all 360ms;
  }
+
+main section article:hover h4.descripcion{
+  font-size: 16px;
+}
+.product_img{
+  transition: all 001ms;
+}
+main section article:hover img.product_img{
+  box-shadow: 0px 0px 10px rgb(100, 100, 100, );
+  
+}
+
  .articulo{
     background-color: white;
-     margin-bottom: 10px;
+     margin-bottom: 18px ;
+
+     
      
  }
- div.parteDelFooter{
+ div.parteDelFooter1{
  color: #1259c3;
      text-align: center;
+     transition: all 001ms;
  
  }
+ footer section article:hover .parteDelFooter1 {
+   color: rgb(21, 231, 32)
+ }
+ div.parteDelFooter2{
+  color: #1259c3;
+      text-align: center;
+  
+  }
+  footer section article:hover .parteDelFooter2 {
+    color: rgb(130, 238, 211);
+  }
+  div.parteDelFooter3{
+    color: #053070;
+        text-align: center;
+    
+    }
+    footer section article:hover .parteDelFooter3 {
+      color: rgb(25, 0, 255)
+    }
 
  
  
@@ -157,15 +223,17 @@ main section article i{
      font-size: 12px;
      border: 1px solid #666;
      float: left;
-     width: 50%;
+     width: 30vw;
      background: white;
+    
+     
    }
    
    /* Style the submit button */
    form.busqueda button {
     
      float: left;
-     width: 10%;
+     width: 5%;
      padding: 10px;
      background: white;
      color: #03264C;
@@ -173,6 +241,8 @@ main section article i{
      border: 1px solid grey;
      border-left: none; /* Prevent double borders */
      cursor: pointer;
+     margin-left: 0%;
+   position: absolute;
    }
    
    form.busqueda button:hover {
@@ -193,6 +263,7 @@ main section article i{
 
 .cosas-del-registro{
   text-align: center;
+ 
 
   padding: 15px 10px;
   align-items: center;
@@ -206,6 +277,34 @@ div.titulo-del-register{
 font-size: 16px;
 font-weight:400 ;
 }
+.register-botones{
+   display: flex;
+  justify-content: space-between;
+
+}
+.boton-de-enviar{
+  padding: 10px;
+  font-size: 17px;
+  border-radius: 5px;
+  margin:5px 5px;
+  transition: all 001ms;
+}
+
+
+.maind-del-register .form-del-register .cosas-del-registro .register-botones  .enviar-register:hover .boton-de-enviar {
+  color: white;
+ background-color:  #0022AA;
+}
+.boton-de-borrar{
+  padding: 10px;
+  font-size: 17px;
+  border-radius: 5px;
+  margin:5px 5px;
+  transition: all 001ms;
+}
+.maind-del-register .form-del-register .cosas-del-registro .register-botones  .borrar-register:hover .boton-de-borrar {
+  background-color:  red;
+}
 
 .login{
   padding: 15px;
@@ -217,14 +316,50 @@ font-weight:400 ;
 div.login-datos{
   margin-bottom: 10px;
   display: block;
+padding: 5px 20px;
 }
 .datos-de-entrada{
   width: 50%;
   padding: 6px 6px;
 }
+.cara-log-in{
+  font-size: 40px;
+}
+.register-cara{
+  font-size: 40px;
+}
+
 .boton-del-login{
-  padding: 5px;
+  font-size: 17px;
+  padding: 10px 20px;
   border-radius: 5px;
+  margin:5px 5px;
+  transition: all 001ms;
+}
+.main-del-login .login .login-datos:hover .boton-del-login  {
+ background-color:  #0022AA;
+ color: white;
+}
+.botones-enviar-y-borrar{
+  
+  justify-content: space-around;
+  display:flex;
+  flex-flow: row;
+ 
+  
+}
+.ancho-botones{
+  width: 100px;
+}
+.boton-borrar-login{
+  font-size: 17px;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 5px 5px;
+  transition: all 001ms;
+}
+.main-del-login .login .login-datos:hover  .boton-borrar-login{
+  background-color: red;
 }
 .enlace-del-login{
   text-align: center;
@@ -242,7 +377,7 @@ div.login-datos{
    @media (min-width: 361px) { 
      .top{
        display: flex;
-       justify-content: space-between;
+       justify-content: space-around;
      }
      .compra{
         max-width: 330px;
@@ -253,23 +388,32 @@ font-size: 12px;
        box-shadow: 0px 0px 10px rgb( 100, 100, 100);
       
     }
+    .general-del-footer{
+      display: flex;
+      flex-flow: row;
+    }
     .menu{
+      align-items: center;
       display:block;
       display: flex;
+      padding: 10px;
+      margin: auto;
       justify-content: space-between;
+      width: 100%;
    
     }
+    
+      
+    
     .menu ul{
       display: flex;
       
     }
     .menu li{
 margin: 0 5px;
-
+justify-content: space-between;
     }
-    .descripcion{
-      display: block;
-    }
+    
     .entrar{
       display: block;
     }
@@ -285,6 +429,7 @@ margin: 0 5px;
       flex: 2 1 auto;
       flex-flow:row ;
   }
+  
     
     
 
@@ -295,16 +440,12 @@ margin: 0 5px;
      
      }
      footer{
-       display: flex;
+      
        flex-wrap: wrap;
        flex-flow: row;
      }
-      .descripcion{
-        
-         display: block;
-       
-
-      }
+      
+      
       
       .entrar{
         display: block;
@@ -312,7 +453,7 @@ margin: 0 5px;
       .burger-menu{
         display: none;
       }
-  .menu,.compra{
+  .compra{
     max-width: 769px ;
     margin: auto;
   } 
@@ -327,6 +468,7 @@ margin: 0 5px;
          font-size: 16px;
               }
               .compra{
+                width: 30%;
                 max-width: none;
                margin: 0;
                 font-weight: 400;
@@ -339,6 +481,16 @@ margin: 0 5px;
       flex-flow:row ;
 
               }
+              .boton-del-login{
+                padding: 10px 200px;
+              }
+              .boton-de-borrar{
+    padding: 10px 150px;
+  }
+  .boton-de-enviar{
+    padding: 10px 150px;
+  }
+  
               
 
    }
